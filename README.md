@@ -11,7 +11,7 @@ Libraries used:
 
 Up next: Clean code, document, host script on server for automation.
 
-Considerations: Linking URL vs permalink. Twitter URL shortener vs Google.
+Considerations: Title vs. cookie cutter "Daily post: ". Linking URL vs permalink. Twitter URL shortener vs Google.
 
 Ideal: Scrape for comic image and tweet directly with linked credit.
 
