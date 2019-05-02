@@ -1,0 +1,27 @@
+import tweepy
+import praw
+
+#Twitter tokens handled by tweepy
+
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth)
+
+reddit = praw.Reddit(client_id='', #Reddit API ID
+    client_secret='', #Reddit API Secret
+    user_agent='',) #Your own unique Reddit ID
+    
+print(reddit.read_only) #Output true
+
+subreddit = reddit.subreddit('calvinandhobbes')
+
+print("Today's top post on /r/" + subreddit.display_name + ":")
+
+for submission in subreddit.top(time_filter='day',limit=1):
+    print(submission.title)
+    print(submission.url)
