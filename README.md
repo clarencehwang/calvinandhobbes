@@ -1,6 +1,7 @@
 # calvinandhobbes 
 
-#### Python script that tweets the top daily post from reddit.com/r/calvinandhobbes. 
+#### Python script that tweets the top daily post from reddit.com/r/calvinandhobbes. Not yet automated. 
+##### https://twitter.com/hwangclarence
 
 Libraries used:
 - PRAW
